@@ -3,4 +3,10 @@
  */
 public class EmploymentMarket extends Market<Agent> {
 
+
+    public Factory applyForJob () {
+        // TODO not implemented
+        return new Factory();
+    }
+
 }
