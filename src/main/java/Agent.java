@@ -3,7 +3,7 @@ import java.util.Random;
 /**
  * Created by daniel on 02/11/17.
  */
-public class Agent {
+public class Agent implements Steppable {
 
     // Coriolanan's expected vitality...
     private double hungerRelatedHealthDecrement = 0.1;
@@ -11,7 +11,7 @@ public class Agent {
     private double sdLifeExpectancy = 365 * 5;
     private Random random = new Random();
 
-    public Factory   factoryOfEmployment = null;
+    public Firm firmOfEmployment = null;
 
     public EmploymentMarket employmentMarket;
     public WordMarket wordMarket;
@@ -33,10 +33,10 @@ public class Agent {
         boolean hungry = true;
 
         // look for work
-        factoryOfEmployment = employmentMarket.applyForJob();
+        firmOfEmployment = employmentMarket.applyForJob();
 
         // if successful set employed true and go to work at t'factory and get paid
-        if (factoryOfEmployment != null) {
+        if (firmOfEmployment != null) {
 
         }
         // else got panning for letters and get paid for those

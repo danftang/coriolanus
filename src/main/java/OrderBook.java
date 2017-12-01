@@ -8,6 +8,6 @@ public class OrderBook<COMMODITY> {
     public ArrayList<MarketOrder<COMMODITY>> offers;
 
     public void clearBook() {
-        
+
     }
 }

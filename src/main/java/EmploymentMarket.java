@@ -4,9 +4,9 @@
 public class EmploymentMarket extends Market<Agent> {
 
 
-    public Factory applyForJob () {
+    public Firm applyForJob () {
         // TODO not implemented
-        return new Factory();
+        return new Firm();
     }
 
 }
